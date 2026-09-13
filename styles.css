@@ -46,15 +46,92 @@ padding: 24px;
 text-align: center;
 width: min(360px, 90vw);
 }
-.cartao img { width: 140px; image-rendering: pixelated; }
-.cartao h2 { text-transform: capitalize; margin: 8px 0; color: #7e22ce; }
-.tipo {
-display: inline-block;
-background: #ede9fe;
-color: #6b21a8;}
+
+.cartao {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+    padding: 28px;
+    width: min(420px, 90vw);
+
+    text-align: center;
+}
+
+.cartao img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.cartao h2 {
+    margin: 8px 0;
+}
+
+.cartao hr {
+    margin: 18px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
 footer {
     text-align: center;
     padding: 20px;
     color: #777;
     font-size: 0.85rem;
+}
+.relacoes-tipo {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.relacoes-tipo h3 {
+    text-align: center;
+    margin-bottom: 14px;
+    color: #333;
+}
+
+.grupo-relacao {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 14px;
+    margin: 8px 0;
+
+    border-radius: 10px;
+    background: #f7f7f9;
+}
+
+.grupo-relacao .icone {
+    font-size: 1.5rem;
+}
+
+.grupo-relacao strong {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.grupo-relacao p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.perigo {
+    border-left: 4px solid #b91c1c;
+}
+
+.fraqueza {
+    border-left: 4px solid #f59e0b;
+}
+
+.resistencia {
+    border-left: 4px solid #16a34a;
+}
+
+.resistencia-forte {
+    border-left: 4px solid #15803d;
+}
+
+.imunidade {
+    border-left: 4px solid #6b21a8;
 }
