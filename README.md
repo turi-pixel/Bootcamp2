@@ -1,7 +1,7 @@
 # Pokédex Web
 
 ## Autor
-Victor Augusto — RA: 22611054
+Victor Augusto Rosendo Galvão — RA: 22611054
 
 ## Descrição
 Aplicação web que busca Pokémon pelo nome ou número e exibe imagem, número,

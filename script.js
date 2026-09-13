@@ -3,6 +3,8 @@ const URL_BASE = "https://pokeapi.co/api/v2/pokemon/";
 // Referências aos elementos da página (as "alças" do HTML)
 const campoBusca  = document.getElementById("campo-busca");
 const botaoBuscar = document.getElementById("botao-buscar");
+// botão aleatório:
+const botaoAleatorio = document.getElementById("botao-aleatorio");
 const areaResultado = document.getElementById("resultado");
 // ---------- Função principal: consulta a API e monta o cartão ---------
 async function buscarPokemon(termo) {
@@ -47,4 +49,11 @@ if (termo) buscarPokemon(termo);
 botaoBuscar.addEventListener("click", dispararBusca);
 campoBusca.addEventListener("keydown", (e) => {
 if (e.key === "Enter") dispararBusca();
+});
+
+botaoAleatorio.addEventListener("click", () => {
+
+    const idAleatorio = Math.floor(Math.random() * 1025) + 1;
+
+    buscarPokemon(idAleatorio);
 });
