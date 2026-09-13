@@ -1,3 +1,11 @@
+## 🌐 Links da entrega
+
+### 🚀 Aplicação no ar
+https://turi-pixel.github.io/Bootcamp2/
+
+### 💻 Repositório no GitHub
+https://github.com/turi-pixel/Bootcamp2
+
 # 🎮 Pokédex Web
 
 ## 👨‍💻 Autor
