@@ -52,3 +52,9 @@ width: min(360px, 90vw);
 display: inline-block;
 background: #ede9fe;
 color: #6b21a8;}
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 0.85rem;
+}
