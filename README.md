@@ -1,29 +1,66 @@
-# Pokédex Web
+# 🎮 Pokédex Web
 
-## Autor
-Victor Augusto Rosendo Galvão — RA: 22611054
+## 👨‍💻 Autor
 
-## Descrição
-Aplicação web que busca Pokémon pelo nome ou número e exibe imagem, número,
-tipos, altura, peso e habilidades. Útil para fãs consultarem rapidamente os
-dados de qualquer Pokémon da Pokédex Nacional.
+**Victor Augusto Rosendo Galvão**  
+RA: 22611054
 
-## API utilizada
-- **PokeAPI** — documentação: https://pokeapi.co/docs/v2
-- Endpoint consumido: `https://pokeapi.co/api/v2/pokemon/{nome-ou-id}`
+## 📖 Sobre o projeto
 
-## Funcionalidades
-- Busca por nome (em inglês) ou número, pelo botão **Buscar** ou tecla **Enter**
-- Botão **🎲 Aleatório** que sorteia um Pokémon entre 1 e 1025
-- Exibição de 6 informações da resposta: imagem, número, nome, tipos, altura (m), peso (kg) e habilidades
-- Conversão de unidades (decímetros → metros; hectogramas → kg)
-- Mensagens amigáveis e distintas para **busca sem resultado** e **falha de conexão/API fora do ar**
+A **Pokédex Web** é uma aplicação desenvolvida como parte do **Bootcamp II**.
 
-## Como executar localmente
-1. Clone: `git clone https://github.com/SEU-USUARIO/bootcamp2-app.git`
-2. Abra o arquivo `index.html` no navegador
-   (ou use a extensão *Live Server* do VS Code)
+A aplicação consome dados da **PokeAPI** e permite consultar Pokémon pelo nome ou pelo número da Pokédex Nacional. Além das informações básicas, a aplicação também consulta as relações entre tipos para apresentar as **fraquezas, resistências e imunidades** de cada Pokémon.
 
-## Links
-- **Aplicação no ar (GitHub Pages):** https://SEU-USUARIO.github.io/bootcamp2-app/
-- **Repositório:** https://github.com/SEU-USUARIO/bootcamp2-app
+O projeto foi desenvolvido utilizando **HTML, CSS e JavaScript**, com consumo assíncrono da API através de `fetch()`.
+
+## 🔎 Funcionalidades
+
+- 🔍 Busca de Pokémon por **nome (em inglês) ou número**
+- ⌨️ Busca através do botão **Buscar** ou da tecla **Enter**
+- 🎲 Botão **Pokémon Aleatório** para sortear um Pokémon
+- 🖼️ Exibição da imagem oficial do Pokémon
+- 🔢 Número na Pokédex
+- 📏 Altura em metros
+- ⚖️ Peso em quilogramas
+- 🧬 Exibição do(s) tipo(s) do Pokémon
+- ⚠️ Identificação das fraquezas
+- 🛡️ Identificação das resistências
+- 🚫 Identificação das imunidades
+- 🔄 Combinação das relações de dano para Pokémon com mais de um tipo
+- ⏳ Feedback de carregamento durante as consultas
+- ❌ Tratamento de Pokémon não encontrado
+- 🌐 Tratamento de falhas de conexão ou indisponibilidade da API
+
+## 🔌 API utilizada
+
+Este projeto utiliza a **PokeAPI**, uma API pública com informações sobre o universo Pokémon.
+
+Documentação:
+
+https://pokeapi.co/docs/v2
+
+Principais endpoints utilizados:
+
+`https://pokeapi.co/api/v2/pokemon/{nome-ou-id}`
+
+`https://pokeapi.co/api/v2/type/{tipo}`
+
+O primeiro endpoint fornece os dados do Pokémon, enquanto o segundo é utilizado para consultar as relações entre os tipos e determinar fraquezas, resistências e imunidades.
+
+## 🛠️ Tecnologias utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+- Fetch API
+- PokeAPI
+- Git
+- GitHub
+- GitHub Pages
+
+## 🚀 Como executar localmente
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/turi-pixel/Bootcamp2.git
