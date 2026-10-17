@@ -1,78 +1,3 @@
-## 🌐 Links da entrega
-
-### 🚀 Aplicação no ar
-https://turi-pixel.github.io/Bootcamp2/
-
-### 💻 Repositório no GitHub
-https://github.com/turi-pixel/Bootcamp2
-
-# 🎮 Pokédex Web
-
-## 👨‍💻 Autor
-
-**Victor Augusto Rosendo Galvão**  
-RA: 22611054
-
-## 📖 Sobre o projeto
-
-A **Pokédex Web** é uma aplicação desenvolvida como parte do **Bootcamp II**.
-
-A aplicação consome dados da **PokeAPI** e permite consultar Pokémon pelo nome ou pelo número da Pokédex Nacional. Além das informações básicas, a aplicação também consulta as relações entre tipos para apresentar as **fraquezas, resistências e imunidades** de cada Pokémon.
-
-O projeto foi desenvolvido utilizando **HTML, CSS e JavaScript**, com consumo assíncrono da API através de `fetch()`.
-
-## 🔎 Funcionalidades
-
-- 🔍 Busca de Pokémon por **nome (em inglês) ou número**
-- ⌨️ Busca através do botão **Buscar** ou da tecla **Enter**
-- 🎲 Botão **Pokémon Aleatório** para sortear um Pokémon
-- 🖼️ Exibição da imagem oficial do Pokémon
-- 🔢 Número na Pokédex
-- 📏 Altura em metros
-- ⚖️ Peso em quilogramas
-- 🧬 Exibição do(s) tipo(s) do Pokémon
-- ⚠️ Identificação das fraquezas
-- 🛡️ Identificação das resistências
-- 🚫 Identificação das imunidades
-- 🔄 Combinação das relações de dano para Pokémon com mais de um tipo
-- ⏳ Feedback de carregamento durante as consultas
-- ❌ Tratamento de Pokémon não encontrado
-- 🌐 Tratamento de falhas de conexão ou indisponibilidade da API
-
-## 🔌 API utilizada
-
-Este projeto utiliza a **PokeAPI**, uma API pública com informações sobre o universo Pokémon.
-
-Documentação:
-
-https://pokeapi.co/docs/v2
-
-Principais endpoints utilizados:
-
-`https://pokeapi.co/api/v2/pokemon/{nome-ou-id}`
-
-`https://pokeapi.co/api/v2/type/{tipo}`
-
-O primeiro endpoint fornece os dados do Pokémon, enquanto o segundo é utilizado para consultar as relações entre os tipos e determinar fraquezas, resistências e imunidades.
-
-## 🛠️ Tecnologias utilizadas
-
-- HTML5
-- CSS3
-- JavaScript
-- Fetch API
-- PokeAPI
-- Git
-- GitHub
-- GitHub Pages
-
-## 🚀 Como executar localmente
-
-Clone o repositório:
-
-```bash
-git clone https://github.com/turi-pixel/Bootcamp2.git
-
 # Pokédex — Bootcamp II | Etapa 02
 
 Aplicação web desenvolvida em **HTML, CSS e JavaScript** que consulta a [PokeAPI](https://pokeapi.co/) e permite salvar Pokémon favoritos em um banco de dados **Supabase (PostgreSQL)**. A aplicação é servida por **Nginx** em um container Docker.
@@ -145,11 +70,11 @@ Arquivo [`.dockerignore`](.dockerignore) na raiz do projeto. Exclui arquivos des
 
 Repositório: https://hub.docker.com/r/turipixel/bootcamp2-app/tags
 
-Tags utilizadas: `1.0` (versão inicial), `1.1` (versão com melhorias) e `latest` (versão atual). **Verificar no Docker Hub se as três tags estão publicadas antes da entrega.**
+Tags utilizadas: `1.0` (versão inicial), `1.1` (versão com melhorias) e `latest` (versão atual).
 
 ### SQ3 — Descrição no Docker Hub
 
-O [Docker Hub](https://hub.docker.com/r/turipixel/bootcamp2-app) deve conter no campo *Overview*: descrição da Pokédex, link do GitHub e comando `docker run` desta documentação. **Conferir o Overview antes de entregar.**
+O [Docker Hub](https://hub.docker.com/r/turipixel/bootcamp2-app) apresenta a página da imagem Docker. A descrição (*Overview*) pode incluir informações do projeto, link do GitHub e o comando `docker run` desta documentação.
 
 ### SQ4 — Dois containers e Kubernetes
 
@@ -161,7 +86,7 @@ docker run -d --name pokedex-teste -p 8081:80 turipixel/bootcamp2-app:1.0
 docker ps
 ```
 
-### Sidequest 4 — Execução simultânea de containers
+#### Evidência — execução simultânea de containers
 
 Foram executados dois containers Docker simultaneamente:
 
@@ -176,6 +101,6 @@ A execução foi comprovada utilizando o comando `docker ps`.
 
 ## Histórico e entrega
 
-A Etapa 02 continua no mesmo repositório da Etapa 01. O histórico de commits deve evidenciar a evolução do projeto; **conferir o requisito de pelo menos seis novos commits da etapa**.
+A Etapa 02 continua no mesmo repositório da Etapa 01. O histórico de commits deve evidenciar a evolução do projeto; o histórico de commits registra as alterações realizadas.
 
-**Arquivo a enviar no Moodle:** somente este `README.md`, após confirmar os links, as tags, a descrição no Docker Hub e o print da SQ4 commitado no GitHub.
+**Entrega no Moodle:** arquivo `README.md`. As evidências permanecem no repositório GitHub.
